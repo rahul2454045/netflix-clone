@@ -1,0 +1,431 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#000;
+    color:white;
+}
+
+header{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.7),
+    rgba(0,0,0,.7)),
+    url("https://images.unsplash.com/photo-1524985069026-dd778a71c7b4");
+    background-size:cover;
+    background-position:center;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+
+    position:absolute;
+    top:0;
+    width:100%;
+    z-index:10;
+}
+}
+
+.logo{
+    color:#e50914;
+    font-size:2rem;
+}
+
+nav button{
+    background:#e50914;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.hero{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    padding-top:100px;
+}
+
+.hero h2{
+    font-size:60px;
+    font-weight:700;
+}
+
+.hero p{
+    font-size:22px;
+    margin:20px 0;
+}
+
+.hero h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    margin-bottom:20px;
+}
+
+.email-box{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.email-box input{
+    padding:12px;
+    width:300px;
+}
+
+.email-box button{
+    background:#e50914;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    cursor:pointer;
+}
+
+.features{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:60px 20px;
+}
+
+.card{
+    background:#111;
+    padding:25px;
+    width:300px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+@media(max-width:768px){
+
+    .hero h2{
+        font-size:2rem;
+    }
+
+    nav{
+        padding:20px;
+    }
+
+    .email-box input{
+        width:100%;
+    }
+}
+
+
+
+
+.signin-btn{
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border:1px solid rgba(255,255,255,0.2);
+    color:white;
+    padding:10px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.signin-btn:hover{
+    background:#e50914;
+    transform:translateY(-3px);
+}
+
+.movies{
+    padding:60px;
+}
+
+.movie-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.movies{
+    padding:70px 50px;
+}
+
+.movies h2{
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+.movie-grid{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.movie-card{
+    width:220px;
+    background:#111;
+    border-radius:12px;
+    overflow:hidden;
+    transition:0.4s;
+    cursor:pointer;
+}
+
+.movie-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.movie-card h3{
+    text-align:center;
+    padding:15px;
+    font-size:18px;
+}
+
+.movie-card:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 25px rgba(229,9,20,0.8);
+}
+
+
+.movie-card:hover img{
+    transform:scale(1.1);
+}
+
+.faq{
+    padding:60px;
+}
+
+.faq-question{
+    width:100%;
+    text-align:left;
+    background:#222;
+    color:white;
+    border:none;
+    padding:20px;
+    cursor:pointer;
+    font-size:18px;
+    margin-top:10px;
+}
+
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:.3s;
+    background:#333;
+}
+
+.faq-answer p{
+    padding:20px;
+}
+
+.reveal{
+    opacity:0;
+    transform:translateY(50px);
+    transition:1s;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+body{
+    background:
+    radial-gradient(circle at top,
+    #1a1a1a,
+    #000);
+}
+
+
+
+html{
+scroll-behavior:smooth;
+}
+
+.logo{
+color:#E50914;
+font-size:2.5rem;
+font-weight:bold;
+text-shadow:0 0 20px #E50914;
+}
+
+header{
+height:70vh;
+background:
+linear-gradient(
+to top,
+#000 0%,
+rgba(0,0,0,.7) 7%,
+rgba(0,0,0,.6) 100%
+),
+url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba");
+background-size:cover;
+background-position:center;
+}
+
+.signin-btn{
+background:rgba(255,255,255,.1);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,.2);
+border-radius:10px;
+}
+
+.movies{
+padding:70px 50px;
+}
+
+.movie-grid{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.movie-card{
+width:220px;
+background:#111;
+border-radius:12px;
+overflow:hidden;
+position:relative;
+transition:.4s;
+}
+
+.movie-card img{
+width:100%;
+height:320px;
+object-fit:cover;
+}
+
+.movie-card:hover{
+transform:scale(1.08);
+box-shadow:0 0 25px rgba(229,9,20,.8);
+}
+
+.rank{
+position:absolute;
+top:10px;
+left:10px;
+font-size:60px;
+font-weight:bold;
+color:white;
+}
+
+.movie-card h3{
+text-align:center;
+padding:15px;
+}
+
+.reasons{
+padding:80px 50px;
+}
+
+.reason-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.reason-card{
+background:rgba(255,255,255,.05);
+padding:25px;
+border-radius:15px;
+backdrop-filter:blur(10px);
+}
+
+.reason-card:hover{
+transform:translateY(-10px);
+}
+
+footer{
+padding:40px;
+background:#111;
+text-align:center;
+}
+
+.footer-links a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+}
+
+@media(max-width:768px){
+
+.hero h2{
+font-size:36px;
+}
+
+.movie-card{
+width:170px;
+}
+
+.movie-card img{
+height:250px;
+}
+
+}
+
+
+
+
+.rank{
+    position:absolute;
+    top:10px;
+    left:10px;
+    font-size:70px;
+    font-weight:bold;
+    color:white;
+    text-shadow:4px 4px 10px black;
+    z-index:10;
+}
+
+.movie-card{
+    position:relative;
+}
+
+.movie-card h3{
+    text-align:center;
+    padding:15px;
+    background:#111;
+    color:white;
+}
+
+
+
+
+
+.curve{
+    height:70px;
+    background: linear-gradient(to bottom,#000,#141414);
+    border-top:4px solid #e50914;
+    border-radius:50% 50% 0 0;
+    margin-top:-60px;
+}
+
+.hero{
+    padding-top:120px;
+}
+
+.movies{
+    margin-top:-40px;
+    position:relative;
+    z-index:2;
+    padding:0 50px 70px;
+}
